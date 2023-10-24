@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="indexContainer">
+        <nav id="indexNav">
+            <img id="imgLaptop" src="/WebsitesProject1/Afbeeldingen/logolaptop.png" alt="logolaptop">
+            <ul id="navMenu">
+                <li class="unActiveNav"><a class="hrefStyle" href="index.html">Home</a></li>
+                <li class="unActiveNav"><a class="hrefStyle" href="about.html">Over mij</a></li>
+                <li class="unActiveNav"><a class="hrefStyle" href="cv.html">Mijn CV</a></li>
+                <li class="unActiveNav"><a class="hrefStyle" href="ervaring.html">Mijn Ervaring</a></li>
+                <li class="activeNav">Contact</li>
+            </ul>
+        </nav>
+
+        <section id="indexSidebar" class="sideBar">
+
+            <h1 class="cvOpleiding">Contact Gegevens</h1>
+            
+            <div id="contactDiv">
+                <div id="contactDiv1">
+                    <div class="contactBubbles">
+                        <br><br><br>     
+                        <img  src="/WebsitesProject1/Afbeeldingen/mail_icon.png" alt="mail">
+                        <p style="font-size: small;">tim.smans@outlook.com</p>
+                        <br>
+                    </div>
+                </div>
+                <div id="contactDiv2">
+                    <div class="contactBubbles">
+                        <br><br><br>     
+                        <img src="/WebsitesProject1/Afbeeldingen/phone_icon.png" alt="phone">
+                        <p style="font-size: small;">+32 492 860 870</p>
+                        <br>
+                    </div>
+                </div>
+                <div id="contactDiv3">
+                    <div class="contactBubbles">
+                        <br><br><br>     
+                        <img src="/WebsitesProject1/Afbeeldingen/linkedin_icon.png" alt="linkedin">
+                        <p class="contactGegevensText"><a class="cvHref" href="http://bit.ly/46R54wt">Klik Hier</a></p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main id="indexMain">
+
+            <section>
+                <h1 class="aboutTitle">Contacteer Mij</h1>
+            </section>
+
+            <form method="post" action="https://tm-statweb.be/forms.php">
+                <label for="naam">Naam: </label><br>
+                <input class="inputBox" type="text" name="naam" id="naam" placeholder="Naam"/>
+                <br><br>
+                <label for="voornaam">Voornaam: </label><br>
+                <input class="inputBox" type="text" name="voornaam" id="voornaam" placeholder="Voornaam"/>
+                <br><br>
+                <label for="email">E-Mail: </label><br>
+                <input class="inputBox" type="email" name="email" id="email" placeholder="E-Mail"/>
+                <br><br>
+                <label for="onderwerp">Onderwerp: </label><br>
+                <input class="inputBox" type="text" name="onderwerp" id="onderwerp" placeholder="Onderwerp"/>
+                <br><br>
+                <label for="bericht">Bericht: </label><br>
+                <textarea rows="7" cols="80" id="bericht"></textarea>
+                <input type="submit" value="Verzenden"/>                
+            </form>
+
+        </main>
+    </div>  
+</body>
+</html>

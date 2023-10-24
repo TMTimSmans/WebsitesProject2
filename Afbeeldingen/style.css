@@ -1,0 +1,365 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+.activeNav{
+    text-decoration: underline;
+    color: #1f2833;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 40px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+.unActiveNav{
+    text-transform: uppercase;
+    text-decoration: underline;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 40px;
+    padding-top: 30px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.unActiveNav:hover{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #1f2833;
+    transition: 0.2s ease-in;    
+}
+.hrefStyle{
+    color: #c5c6c7;
+}
+
+#imgLaptop{
+    float: left;
+    height: 80px;
+    padding-top: 25px;
+    padding-left:   25px;
+}
+#imgBigLaptop{
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 730px;
+    z-index: 100;
+}
+
+.sideBar{
+    background-color: #548CA8;
+    float: right;
+    padding: 0px;
+    border-top-left-radius: 5%;
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(/WebsitesProject1/Afbeeldingen/background.png) no-repeat center left fixed;
+    background-size: 100% 100%;
+}
+
+.alignRight{
+    text-align: end;
+    float: right;
+
+}
+
+/*Index CSS*/
+.indexContainer{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1.1fr;
+    grid-template-areas: 
+    "nav nav nav sidebar"
+    "main main main sidebar";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    color: #1f2833;
+    font-weight: 700;
+}
+
+#indexNav {
+    grid-area: nav;
+    border-radius: 5px;
+    position: relative;
+
+    margin: 0px;
+    padding: 0px;
+}
+#indexSidebar {
+    grid-area: sidebar;
+    border-top-left-radius: 3%;
+    text-align: center;
+
+}
+#headShot{
+    border-radius: 55%;
+    height: 400px;
+    padding-top: 50px;
+}
+#programmeren{
+    border-radius: 55%;
+    width: 400px;
+    padding-top: 50px;
+}
+#indexMain{
+    grid-area: main;
+    border-radius: 5px;
+
+}
+#indexFooter{
+    grid-area: footer;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.indexTitle{
+    padding-bottom: 0px;
+    padding-left: 170px;
+    font-size: 90px;
+    margin: 0;
+    background-color: #548CA8;
+}
+.indexSubTitle{
+    margin: 0;
+    padding-top: 170px;
+    padding-left: 170px;
+    padding-bottom: 0px;
+    font-size: 30px;
+}
+
+/*About me CSS*/
+.aboutTitle{
+    padding-bottom: 0px;
+    font-size: 70px;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #548CA8;
+}
+.aboutSubTitle  {
+    margin-top: 0px;
+    padding-left: 400px;
+    font-size: 34px;
+    text-decoration: underline;
+}
+.aboutText{
+    margin-top: 5px;
+    padding-left: 400px;
+    font-size: 25px;
+    font-weight: normal;
+}
+.aboutBox{
+    height: 250px;
+    margin: 5px;
+    text-align:left;
+}
+.aboutImage1{
+    float: left;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*CV CSS*/
+
+.cvContainer{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 0.4fr 1.4fr;
+    grid-template-rows: 0.1fr 1.1fr;
+    grid-template-areas: 
+    "header header"
+    "kolom1 kolom2";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    color: #1f2833;
+    font-weight: 700;
+    margin: 40px;
+}
+
+#cvHeader {
+    grid-area: header;
+    margin: 0px;
+    padding: 0px;
+
+}
+#cvKol1 {
+    grid-area: kolom1;
+
+    margin: 0px;
+    padding: 10px;
+    background-color: #548CA8;
+}
+#cvKol2 {
+    grid-area: kolom2;
+
+    margin: 0px;
+    padding: 0px;
+}
+.cvSubTitle{
+    text-decoration: underline;
+}
+.cvSubTitle2{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+.cvParagraph{
+    margin-left: 20px;
+}
+.cvIcons{
+    height: 20px;
+    float: left;
+}
+.cvHref{
+    color: #1f2833;
+}
+.cvHref:visited{
+    color: #1f2833;
+}
+.cvUnderline{
+    text-decoration: underline;
+}
+.cvOpleiding{
+    margin-top: 300px;
+}
+#opleidingKol1{
+    padding: 20px;
+    height: 400px;
+    width: 35%;
+    float: left;
+    text-align: left;
+}
+#opleidingKol2{
+    padding: 20px;
+    width: 65%;
+    height: 400px;
+    float: right;
+    text-align: left;
+
+}
+
+
+/*Contact Form CSS*/
+
+form{
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 20px;
+    border: 3px solid #1f2833;
+    width: 47%;
+}
+
+input[type=text] {
+    padding:10px;
+    margin: 3px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=email] {
+    padding:10px;
+    margin: 3px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+textarea {
+    margin: 3px;
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=submit]{
+    appearance:none;
+    -webkit-appearance:none;
+  
+    padding:10px;
+    border:none;
+    background-color:#548CA8;
+    color:#1f2833;
+    font-weight: bold;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+}
+
+.contactGegevens{
+    text-align: left;
+    margin-left: 20px;
+}
+.contactGegevensText{
+    margin: 10px;
+}
+.contactIcons{
+    height: 40px;
+    float: left;
+}
+#contactDiv{
+    margin: 20px;
+}
+#contactDiv1{
+    height: 250px;
+    width: 50%;
+    float: left;
+}
+#contactDiv2{
+    height: 250px;
+    width: 50%;
+    float: right;
+}
+#contactDiv2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#contactDiv3{
+    height: 250px;
+    width: 50%;
+    float:left;
+}
+.contactBubbles{
+    margin: 20px;
+    background-color: #c5c6c7;
+    position: static;
+    filter: drop-shadow(5px 5px)
+
+}
+.ervaringDiv1{
+
+    margin: 30px;
+}
+
+.ervaringDiv2{
+
+    height: 80%;
+    width: 50%;
+    float: left;
+}
+
+.ervaringDiv3{
+    height: 80%;
+    width: 50%;
+    float: right;
+}
+.centerText{
+    text-align: center;
+}
+
+.floatL{
+    float: left;
+}
+.floatR{
+    float: right;
+}
+
