@@ -1,3 +1,5 @@
+/* #1f2833 */
+
 html{
     margin: 0px;
     padding: 0px;
@@ -30,17 +32,32 @@ body::-webkit-scrollbar{
     font-size: 30px;
 }
 .cvParagraph{
-    font-size: 25px;
+    font-size: 22px;
+    text-align: left !important;
 }
 .cvIcons{
-    height: 30px;
+    height: 40px;
     float: left;
 }
 
 
+.contactForm{
+    border: 0px;
+}
 
+.contactBox{
+    background-color: #548CA8 !important;
+}
 
+.contactHref{
+    color: white !important;
+    text-align: left;
+}
+.contactHref:visited{
+    color: white !important;
+    text-align: left;
 
+}
 
 
 
@@ -56,6 +73,15 @@ body::-webkit-scrollbar{
     border: none;
 }
 
+.buttonContact{
+    background-color: #36718f;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.buttonContact:hover{
+    background-color: #1b4357;
+    border: none;
+}
   .activeNav{
     text-decoration: underline;
     color: #1f2833;
@@ -293,14 +319,6 @@ body{
 
 
 /*Contact Form CSS*/
-
-form{
-    margin-left: 30%;
-    margin-top: 5%;
-    padding: 20px;
-    border: 3px solid #1f2833;
-    width: 47%;
-}
 
 input[type=text] {
     padding:10px;

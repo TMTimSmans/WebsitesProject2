@@ -1,13 +1,18 @@
-c<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mijn CV</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
 
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="vendor/OwlCarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2/assets/owl.theme.default.min.css">
+  </head>
 
     
 <body>
@@ -70,19 +75,19 @@ c<!DOCTYPE html>
                     <div class="card-body">
                       <h5 class="card-title cvSubTitle">Personalia</h5>
 
-                      <img class="cvIcons" src="Afbeeldingen/Afbeeldingen/phone_icon.png" alt="">
+                      <img class="cvIcons" src="Afbeeldingen/phone_icon.png" alt="">
                       <p class="cvParagraph">+32 492 860 870</p>
 
-                      <img class="cvIcons" src="Afbeeldingen/Afbeeldingen/mail_icon.png" alt="">
+                      <img class="cvIcons" src="Afbeeldingen/mail_icon.png" alt="">
                       <p class="cvParagraph">tim.smans@outlook.com</p>
                       
-                      <img class="cvIcons" src="Afbeeldingen/Afbeeldingen/calendar_icon.png" alt="">
+                      <img class="cvIcons" src="Afbeeldingen/calendar_icon.png" alt="">
                       <p class="cvParagraph">06/09/2001</p>
 
-                      <img class="cvIcons" src="Afbeeldingen/Afbeeldingen/lang_icon.png" alt="">
+                      <img class="cvIcons" src="Afbeeldingen/lang_icon.png" alt="">
                       <p class="cvParagraph">Nederlands</p>
 
-                      <img class="cvIcons" src="Afbeeldingen/Afbeeldingen/linkedin_icon.png" alt="">
+                      <img class="cvIcons" src="Afbeeldingen/linkedin_icon.png" alt="">
                       <p class="cvParagraph"><a class="cvHref" href="https://www.linkedin.com/in/tim-smans-611155294/" target="_blank">Klik hier</a></p>
                     </div>
                   </div>
@@ -113,7 +118,7 @@ c<!DOCTYPE html>
             <div class="px-4 py-5 text-center cvMarg" id="div3">
               <img class="d-block mx-auto mb-4" src="Afbeeldingen/person_icon.png" alt="" width="100">
               <h1 class="display-5 fw-bold">Profiel</h1>
-              <div class="col-lg-6 mx-auto">
+              <div class="col-lg-9 mx-auto">
                 <p class="lead mb-4">Ik ben een enthousiaste en gedreven student in het graduaat programmeren met een passie voor technologie en softwareontwikkeling. Mijn doel is om mijn technische vaardigheden te ontwikkelen en te groeien als een competente programmeur in een snel veranderende digitale wereld. </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                   <button type="button" class="btn btn-primary btn-lg px-4 gap-3 button"><a class="hrefStyle" href="#div4">Wat zijn mijn skills?</a></button>
@@ -126,14 +131,74 @@ c<!DOCTYPE html>
             <div class="px-4 py-5 text-center cvMarg" id="div4">
               <img class="d-block mx-auto mb-4" src="Afbeeldingen/skills_icon.png" alt="" width="100">
               <h1 class="display-5 fw-bold">Skills</h1>
-              <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Ik ben een enthousiaste en gedreven student in het graduaat programmeren met een passie voor technologie en softwareontwikkeling. Mijn doel is om mijn technische vaardigheden te ontwikkelen en te groeien als een competente programmeur in een snel veranderende digitale wereld. </p>
+              <div class="col-lg-9 mx-auto">
+                <div class="owl-carousel owl-theme owl-drag owl-">
+                  <div class="item"> <img src="Afbeeldingen/csharp_logo.png" alt=""> </div>
+                  <div class="item"> <img src="Afbeeldingen/html5-01_icon-icons.com_50875.png" alt=""> </div>
+                  <div class="item"> <img src="Afbeeldingen/css_logo.png" alt=""> </div>
+                  <div class="item"> <img src="Afbeeldingen/bootstrap_logo.png" alt=""> </div>
+                  <div class="item"> <img src="Afbeeldingen/javascript_logo.png" alt=""> </div>
+                  <div class="item"> <img src="Afbeeldingen/java_logo.png" alt=""> </div>
+                  <div class="item"> <img src="Afbeeldingen/SQL_logo.png" alt=""> </div>
+                </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3 button"><a class="hrefStyle" href="#div2">Klik hier om mijn CV te bekijken</a></button>
+                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3 button"><a class="hrefStyle" href="#div5">Mijn vorige werkervaring</a></button>
                 </div>
               </div>
             </div>
-          <p class="cvMarg">f</p>
+
+            <!-- werkervaring -->
+            <div class="px-4 py-5 text-center cvMarg" id="div5">
+              <img class="d-block mx-auto mb-4" src="Afbeeldingen/wrench.png" alt="" width="100">
+              <h1 class="display-5 fw-bold">Werk Ervaring</h1>
+              <div class="col-lg-9 mx-auto">
+                <h2>Dit is een overzicht van mijn werk ervaringen</h2>
+                <p class="lead mb-4" style="font-size: 25px;">
+                  |<br>
+                  |<br>
+                  <span class="fw-bold">2020 - 2023</span><br>
+                  Vlassak Verhulst Exclusieve Villabouw <br>
+                  <br>
+                  <span class="fst-italic">Taken</span><br>
+                  Uitvoeren van funderingswerken <br>
+                  Siermetselwerken Uitvoeren <br>
+                  Renovatietechnieken toepassen <br>
+                  Planlezen <br>
+                  Uitvoeren van stabiliteitswerken <br>
+                  |<br>
+                  |<br>
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3 button"><a class="hrefStyle" href="#div6">Bekijk al mijn opleidingen</a></button>
+                
+                </div>
+              </div>
+            </div>
+            <!-- opleiding -->
+            <div class="px-4 py-5 text-center cvMarg" id="div6">
+              <img class="d-block mx-auto mb-4" src="Afbeeldingen/school_icon.png" alt="" width="100">
+              <h1 class="display-5 fw-bold">Opleidingen</h1>
+              <div class="col-lg-9 mx-auto">
+                <h2>Dit is een overzicht van mijn gevolgde opleidingen en cursussen</h2>
+                <p class="lead mb-4" style="font-size: 25px;">
+                  |<br>
+                  |<br>
+                  <span class="fw-bold">2013 - 2020</span><br>
+                  Vito Hoogstraten <br>
+                  Afgestudeert: 7de jaar Renovatietechnieken <br>
+                  |<br>
+                  |<br>
+                  <span class="fw-bold">2023 - ...</span><br>
+                  Thomas More Campus Turnhout <br>
+                  Graduaat Programmeren
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3 button"><a class="hrefStyle" href="CV_Tim_Smans.pdf" target="_blank">Download mijn volledige CV</a></button>
+                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3 button"><a class="hrefStyle" href="#">Terug naar boven</a></button>
+                </div>
+              </div>
+            </div>
+
 
           <!-- footer -->
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -152,5 +217,18 @@ c<!DOCTYPE html>
         
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="vendor/OwlCarousel2/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          smartspeed: true
+        });
+      });
+    </script>
+  </body>
 </html>
