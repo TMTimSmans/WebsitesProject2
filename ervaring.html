@@ -3,73 +3,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Ervaring</title>
+    <title>Mijn Ervaringen</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+
     <link rel="stylesheet" href="style.css">
-</head> 
+    
+    <link rel="stylesheet" href="vendor/OwlCarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  </head>
+
+    
 <body>
-    <div class="indexContainer">
-        <nav id="indexNav">
-            <img id="imgLaptop" src="/WebsitesProject1/Afbeeldingen/logolaptop.png" alt="logolaptop">
-            <ul id="navMenu">
-            <li class="unActiveNav"><a class="hrefStyle" href="index.html">Home</a></li>
-            <li class="unActiveNav"><a class="hrefStyle" href="about.html">Over Mij</a></li>
-            <li class="unActiveNav"><a class="hrefStyle" href="cv.html">Mijn CV</a></li>
-            <li class="activeNav">Mijn Ervaring</li>
-            <li class="unActiveNav"><a class="hrefStyle" href="contact.html">Contact</a></li>
+
+    
+    <div class="container">
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="imgLaptop" class="p-lg-1" src="Afbeeldingen/logolaptop.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link unActiveNav pb-4 px-5" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link unActiveNav pb-4 px-5" href="about.html">OVEr MIJ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link unActiveNav pb-4 px-5" href="cv.html">Mijn CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active activeNav pb-4 px-5" href="ervaring.html">mijn ervaring</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link unActiveNav pb-4 px-5" href="contact.html">CONTACT</a>
+              </li>
             </ul>
-        </nav>
-
-        <section id="indexSidebar" class="sideBar">
-            <img style="margin-top: 300px; height: 80px;" src="/WebsitesProject1/Afbeeldingen/java_icon.png" alt="programmeren">
-
-            <p style="margin: 30px;">Naast de programmeertalen die ik momenteel aan het leren ben in mijn opleiding, beschik ik ook over aanzienlijke kennis van Java, die ik heb opgedaan via vier jaar zelfstudie.</p>
-        </section>
-
-        <main id="indexMain">
-
-            <section>
-                <h1 class="aboutTitle">Mijn Ervaring</h1>
-            </section>
-
-            <div class="ervaringDiv1">
-                <div class="ervaringDiv2">
-                    <div class="centerText">
-                        <img src="/WebsitesProject1/Afbeeldingen/school_icon.png" alt="school_icon">
-                        <h2>Opleidingen</h2>
-                    </div>
-                    <div class="centerText">
-                        <h3>Vito Hoogstraten</h3>
-                        <h3>2013-2020</h3>
-                        <br>
-                        <p>Opleiding: Ruwbouw en Renovatietechnieken.</p>
-                        <br>
-                        <h3>Thomas More</h3>
-                        <h3>2023-...</h3>
-                        <br>
-                        <p>Opleiding: Graduaat Programmeren</p>                        
-                    </div>
-                </div>
-                <div class="ervaringDiv3">
-                    <div class="centerText">
-                        <img src="/WebsitesProject1/Afbeeldingen/work_icon.png" alt="work_icon">
-                        <h2>Werk Ervaring</h2>
-                    </div>
-                    <div class="centerText">
-                        <h3>Vlassak Verhulst</h3>
-                        <h3>2020 - 2023</h3>
-                        <br>
-                        <p>Functie: Uitvoerend personeel</p>
-                        <p>&ensp;-Bekisten</p>
-                        <p>&ensp;-Planlezen</p>
-                        <p>&ensp;-Metselen</p>
-                        <p>&ensp;-Kleine schrijnwerken</p>
-                        <p>&ensp;-Exclusieve afwerking</p>
-                        <br>                    
-                    </div>
+          </div>
+        </div>
+      </nav>      
+            <!-- intro -->
+            <div class="px-4 py-5 my-5 text-center fullscreen">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/expertise.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Mijn Ervaringen</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead mb-4">Welkom op mijn ervaringenpagina, waar ik mijn reis in de professionele wereld deel. Mijn carrière is een boeiende reis geweest, gekenmerkt door groei, uitdagingen en ontdekkingen. Hier vind je een overzicht van enkele hoogtepunten uit mijn carrière:</p>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#div1'" class="btn btn-primary btn-lg px-4 gap-3 button">Middelbare school</button>
+                  </div>
                 </div>
             </div>
+
+            <!-- middelbare school -->
+            <div class="px-4 py-5 text-center cvMarg" id="div1">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/education.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Mijn middelbare school</h1>
+                <div class="col-lg-10 mx-auto">
+
+                  <p class="lead mb-4">Hier duik ik in een belangrijk hoofdstuk van mijn leven: mijn middelbare schooljaren. Middelbare school was een periode vol groei, ontdekkingen en onvergetelijke ervaringen die me hebben gevormd en geleid naar waar ik nu ben. Lees verder om meer te weten te komen over mijn avonturen en prestaties tijdens deze cruciale fase van mijn onderwijsreis.</p>
+                  <h2 class="mt-5">Vrij Instituut Technisch Onderwijs Hoogstraten</h2>
+                  <h3>2013 - 2020</h3>
+
+                  <!-- Accordion -->
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Opleiding Hout- en Bouwkunde
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-xl-6 col-12">
+                                    In mijn eerste twee jaar van de opleiding <strong>bouw- en houtkunde</strong> heb ik stevige grondslagen gelegd in deze branche. Tijdens deze periode heb ik meegewerkt aan diverse boeiende projecten, verschillende houtbewerkingsmethoden verkend en mijn kennis van bouwtechnieken uitgebreid. Deze start vormde de basis voor mijn groei in de wereld van bouw en houtkunde.
+                                </div>
+                                <div class="col-xl-6 col-12">
+                                    <img class="img-fluid" src="Afbeeldingen/bouwenhoutkunde.jpg" alt="bouw en hout">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          3de Tot 6de jaar, Ruwbouw technieken
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            <div class="row">
+                                <div class="col-xl-6 col-12">
+                                    <img class="img-fluid" src="Afbeeldingen/W-blok.jpg" alt="school blok">
+                                </div>
+
+                                <div class="col-xl-6 col-12">
+                                    Vanaf het <strong>derde jaar</strong> van mijn opleiding maakte ik de overstap naar de studierichting Ruwbouw Technieken. Hoewel deze keuze nog steeds nauw aansloot bij mijn eerdere opleiding, bood het me meer ruimte om daadwerkelijk met mijn handen te werken en grootschalige projecten te realiseren. Tijdens deze vier jaar namen we deel aan diverse ambitieuze projecten, zoals de constructie van een nieuw schoolgebouw <span class="fst-italic">(Zie afbeelding)</span>, vanaf de kelder tot het metselen van de gevel. Deze opleiding was niet alleen een kans om mijn technische vaardigheden te ontwikkelen, maar ook om persoonlijk te groeien en waardevolle levenslessen te leren.                                    
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          7de Jaar Renovatietechnieken
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-xl-6 col-12">
+                                    In dit <strong>zevende specialisatiejaar</strong> werden verschillende renovatietechnieken aangeleerd, samen met diverse afwerkingstechnieken zoals het plaatsen van vloer- en wandtegels en het bepleisteren van muren. Dit jaar bracht echter extra uitdagingen met zich mee vanwege de onderbreking door de COVID-19-pandemie.
+                                </div>
+                                <div class="col-xl-6 col-12">
+                                    <img class="img-fluid" style="height: 300px;" src="Afbeeldingen/plaster.png" alt="plaster">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Buttons -->
+                  <div class="d-grid gap-2 mt-4 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#div2'" class="btn btn-primary btn-lg px-4 gap-3 button">Werken in de villabouw</button>
+                  </div>
+                </div>
+            </div>
+
+
+            <!-- Vlassak -->
+
+            <div class="px-4 py-5 text-center cvMarg" id="div2">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/trowel.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Werken in de villabouw</h1>
+                <div class="col-lg-10 mx-auto">
+
+                  <p class="lead mb-4">In de afgelopen jaren heb ik waardevolle werkervaring opgedaan in de uitdagende wereld van de villabouw. Mijn betrokkenheid bij villaconstructieprojecten heeft me in staat gesteld om te werken aan unieke en op maat gemaakte woningen. Deze ervaring heeft mijn soft skills verfijnd en me een diepgaand inzicht gegeven in hoogwaardige bouwmethoden. Ik ben trots op mijn bijdrage aan het creëren van droomhuizen voor mensen en het realiseren van architectonische meesterwerken in de villa-industrie.</p>
+                  <h2 class="mt-5">Vlassak Verhulst</h2>
+                  <h3>2020 - 2023</h3>
+
+                  <!-- Accordion -->
+                  <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                          Ter plaatsen gieten van kelders
+                        </button>
+                      </h2>
+                      <div id="collapseOne2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-xl-6 col-12">
+                                    Het gieten van <strong>kelders</strong> in de villabouw was altijd een fascinerend proces. Het begon met de vorming van een enorme kuil, waarin de toekomstige kelder vorm kreeg. Vervolgens werden stalen wapeningsstaven in de grond geplaatst, waardoor de kelder sterk en duurzaam zou worden. Nadat alle voorbereidingen waren getroffen, arriveerden de betonmixers en begon het spectaculaire gietproces. De betonmixers stortten een vloeibare massa in de vorm, die geleidelijk begon uit te harden en vorm te krijgen. Gedurende enkele dagen werd de kelder steviger en sterker, en tegen de tijd dat het droog was, was het de solide basis van de villa waarop de rest van het gebouw zou worden opgetrokken
+                                </div>
+                                <div class="col-xl-6 col-12">
+                                    <img class="img-fluid" src="Afbeeldingen/kelder.jpg" alt="kelder">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                          Uitvoeren van siermetselwerken                        </button>
+                      </h2>
+                      <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+
+                            <div class="row">
+                                <div class="col-xl-6 col-12">
+                                    <img class="img-fluid" src="Afbeeldingen/metsel.png" alt="metselwerk">
+                                </div>
+
+                                <div class="col-xl-6 col-12">
+                                    <strong>Siermetselwerk in de villabouw</strong> voegt een vleugje elegantie en karakter toe aan het exterieur van de woning. Het begon allemaal met de zorgvuldige selectie van bakstenen in verschillende kleuren en vormen. Vervolgens werden vakmensen aan het werk gezet om prachtige patronen en ontwerpen te creëren met deze bakstenen. Het was een ambachtelijk proces, waarbij elk stuk baksteen met precisie werd geplaatst en uitgelijnd. Het resultaat was verbluffend - een gevel die niet alleen functioneel was, maar ook artistiek en aantrekkelijk. Siermetselwerk voegde een uniek karakter toe aan elke villa, waardoor elke woning een echt meesterwerk werd.                                 
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                          Planlezen
+                        </button>
+                      </h2>
+                      <div id="collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-xl-6 col-12">
+                                    Het proces van <strong>planlezen</strong> speelde een cruciale rol in mijn werk in de villabouw. Het begon met het bestuderen van gedetailleerde bouwtekeningen die ons een blauwdruk gaven van het hele project. Het was als het lezen van een bouwpuzzel, waarbij elk detail en elke meting van essentieel belang was. We moesten de plannen interpreteren om te begrijpen waar elke muur, raam en deur zou komen, en hoe de hele villa tot leven zou komen. Het was een uitdagende maar opwindende taak, want het planlezen was de sleutel tot het omzetten van ideeën in tastbare en prachtige woningen.        
+                                </div>
+                                <div class="col-xl-6 col-12">
+                                    <img class="img-fluid" style="height: 300px;" src="Afbeeldingen/planlezen.jpg" alt="planlezen">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+                            Soft Skills
+                          </button>
+                        </h2>
+                        <div id="collapseFour2" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">                       
+                            Mijn tijd in de villabouw heeft me niet alleen technische vaardigheden bijgebracht, maar heeft me ook in staat gesteld een breed scala aan waardevolle <strong>soft skills</strong> te ontwikkelen. Samenwerking was essentieel, en ik heb geleerd hoe effectief te communiceren, zowel binnen mijn team als met klanten. Dit heeft mijn vermogen om problemen op te lossen en oplossingen te vinden, aangescherpt. Mijn aanpassingsvermogen werd op de proef gesteld door steeds veranderende omstandigheden, en ik heb geleerd om flexibel en veerkrachtig te zijn. Tijdsbeheer was van het grootste belang, en ik heb geleerd prioriteiten te stellen en efficiënt te werken. Bovenal heeft de focus op kwaliteit me geleerd oog te hebben voor detail en streven naar uitmuntendheid in elk project. Deze soft skills zijn niet alleen waardevol in de bouw, maar hebben me geholpen in mijn persoonlijke en professionele groei.     
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!-- Buttons -->
+                  <div class="d-grid gap-2 mt-4 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#div3'" class="btn btn-primary btn-lg px-4 gap-3 button">Zelfstudie in Java</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Java zelfstudie -->
+            <div class="px-4 py-5 text-center cvMarg" id="div3">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/java-logo.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Zelfstudie in Java</h1>
+                <div class="col-lg-10 mx-auto">
+
+                  <p class="lead mb-4">Tijdens mijn zelfstudie in de programmeertaal Java heb ik een opwindende reis van leren en ontdekken doorgemaakt. Het begon met het bestuderen van de basisconcepten en syntax, en al snel werd ik ondergedompeld in de wereld van objectgeoriënteerd programmeren. Java bood me de mogelijkheid om complexe plugins te bouwen en problemen op te lossen met code. Mijn zelfstudie in Java heeft niet alleen mijn technische vaardigheden uitgebreid, maar heeft me ook geleerd hoe belangrijk doorzettingsvermogen en probleemoplossend denken zijn in de wereld van softwareontwikkeling. Het is een reis vol uitdagingen en beloningen, en ik ben enthousiast om te zien hoe mijn kennis van Java zich verder zal ontwikkelen in mijn graduaatsstudie.</p>
             
-        </main>
-    </div>  
-</body>
+
+                  <!-- Slider -->
+                  <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a data-fancybox="gallery" href="Afbeeldingen/javaprog1.png">
+                            <img src="Afbeeldingen/javaprog1.png" class="d-block w-100" alt="...">
+                        </a>
+
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Java Plugin Voorbeeld 1</h5>
+                          <p>Methods bedoelt om een economy systeem mee te managen.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <a data-fancybox="gallery" href="Afbeeldingen/javaprog2.png">
+                            <img src="Afbeeldingen/javaprog2.png" class="d-block w-100" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Java Plugin Voorbeeld 2</h5>
+                            <p>Een klasse met een cooldown manager.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <a data-fancybox="gallery" href="Afbeeldingen/javaprog3.png">
+                            <img src="Afbeeldingen/javaprog3.png" class="d-block w-100" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Java Plugin Voorbeeld 3</h5>
+                            <p>Een klasse waarin gebruikers in files kunnen worden opgeslagen.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  <!-- Buttons -->
+                  <div class="d-grid gap-2 mt-4 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#div4'" class="btn btn-primary btn-lg px-4 gap-3 button">Graduaat in het programmeren</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Graduaat Programmeren -->
+            <div class="px-4 py-5 text-center cvMarg" id="div4">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/graduation-cap.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Graduaat Programmeren</h1>
+                <div class="col-lg-10 mx-auto">
+
+                  <p class="lead mb-4">Momenteel ben ik toegewijd aan het behalen van mijn graduaat in programmeren aan Thomas More. Deze opleiding heeft me in staat gesteld om mijn passie voor softwareontwikkeling te verdiepen en mijn programmeervaardigheden verder te verfijnen. Tijdens mijn studie heb ik een breed scala aan programmeertalen en technologieën verkend en heb ik projecten uitgevoerd die me hebben uitgedaagd en me waardevolle ervaring hebben opgeleverd. Ik kijk ernaar uit om mijn kennis en expertise in de wereld van informatica verder uit te breiden en bij te dragen aan de spannende ontwikkelingen in dit veld.</p>
+            
+
+                  <h2>Thomas More Campus Turnhout</h2>
+
+                  <!-- Buttons -->
+                  <div class="d-grid gap-2 mt-4 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#'" class="btn btn-primary btn-lg px-4 gap-3 button">Terug naar boven</button>
+                  </div>
+                </div>
+            </div>
+          <!-- footer -->
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-muted">© 2023 Smans Tim</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/tim-smans-611155294/" target="_blank">  <img src="Afbeeldingen/linkedin_icon.png" alt=""></a></li>
+              <li class="ms-3"><a class="text-muted" href="mailto:tim.smans@outlook.com" target="_blank"><img src="Afbeeldingen/mail_icon.png" alt=""></a></li>
+            </ul>
+          </footer>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="vendor/OwlCarousel2/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    </body>
 </html>
