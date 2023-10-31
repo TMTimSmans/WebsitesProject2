@@ -60,6 +60,20 @@ body::-webkit-scrollbar{
 }
 
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    border-radius: 50%;
+    background-color: #548CA8;
+    border-color: #548CA8;
+}
+#btn-back-to-top:hover{
+    background-color: #36718f;
+    border-color: #36718f;
+}
+
 
 
 

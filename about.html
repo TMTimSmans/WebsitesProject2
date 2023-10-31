@@ -3,73 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over Mij</title>
+    <title>Mijn Ervaringen</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+
     <link rel="stylesheet" href="style.css">
-</head>
+    
+    <link rel="stylesheet" href="vendor/OwlCarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  </head>
+
+    
 <body>
-    <div class="indexContainer">
-        <nav id="indexNav">
-            <img id="imgLaptop" src="/WebsitesProject1/Afbeeldingen/logolaptop.png" alt="logolaptop">
-            <ul id="navMenu">
-            <li class="unActiveNav"><a class="hrefStyle" href="index.html">Home</a></li>
-            <li class="activeNav">Over Mij</li>
-            <li class="unActiveNav"><a class="hrefStyle" href="cv.html">Mijn CV</a></li>
-            <li class="unActiveNav"><a class="hrefStyle" href="ervaring.html">Mijn Ervaring</a></li>
-            <li class="unActiveNav"><a class="hrefStyle" href="contact.html">Contact</a></li>
+
+    
+    <div class="container">
+
+        <div class="container">
+            <button
+              type="button"
+              class="btn btn-danger btn-floating btn-lg"
+              id="btn-back-to-top"
+              >
+             <img class="cvIcons" src="Afbeeldingen/up-arrow.png" alt="">
+            </button>
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="imgLaptop" class="p-lg-1" src="Afbeeldingen/logolaptop.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link unActiveNav pb-4 px-5" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active activeNav pb-4 px-5" href="about.html">OVEr MIJ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link unActiveNav pb-4 px-5" href="cv.html">Mijn CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link unActiveNav pb-4 px-5" href="ervaring.html">mijn ervaring</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link unActiveNav pb-4 px-5" href="contact.html">CONTACT</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>      
+            <!-- intro -->
+            <div class="px-4 py-5 my-5 text-center fullscreen">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/hobbies.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Mijn Hobby's en Intresses</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead mb-4">Welkom op mijn hobby pagina! Hier deel ik mijn diverse interesses, van gamen en boogschieten tot hiken, reizen en programmeren. Ontdek mijn passies en laat je inspireren. Kom regelmatig terug voor updates en nieuwe avonturen!</p>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#div1'" class="btn btn-primary btn-lg px-4 gap-3 button">Reizen</button>
+                  </div>
+                </div>
+            </div>
 
-        <section id="indexSidebar" class="sideBar">
-            <img id="programmeren" src="/WebsitesProject1/Afbeeldingen/programmeren.jpg" alt="programmeren">
+            <!-- Reizen -->
+            <div class="px-4 py-5 text-center cvMarg" id="div1">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/travel.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Reizen</h1>
+                <div class="col-lg-10 mx-auto">
 
-            <p>Mijn begin in de wereld van programmeren tijdens mijn huidige opleiding is een spannend avontuur. Deze nieuwe reis heeft me laten kennismaken met de boeiende wereld van code en computers, en ik ben er met veel enthousiasme ingedoken.
+                  <p class="lead mb-4">Reizen is mijn grootste passie, en het stelt me in staat om de prachtige diversiteit van onze wereld te ontdekken. Twee bestemmingen hebben een speciale plek in mijn hart veroverd: Japan en Slovenië.
+                    <br><br>
+                    Japan, het land van contrasten, heeft me betoverd met zijn mix van oude tradities en moderne innovatie. Van de serene tempels en theeceremonies in Kyoto tot de bruisende stadsdrukte van Tokyo, elke hoek van Japan is een nieuwe verrassing.
+                    <br><br>
+                    
+                    Slovenië daarentegen biedt een natuurlijke schoonheid die mijn ziel raakt. Van de adembenemende Alpen en de glinsterende meren tot de pittoreske dorpjes, het is een bestemming voor natuurliefhebbers en avonturiers.
+                    
+                    <br><br>
+                    Het verkennen van deze twee unieke culturen en landschappen heeft mijn reisverslaving alleen maar aangewakkerd. Reizen stelt me in staat om de wereld in al zijn pracht en praal te ervaren, en ik kijk ernaar uit om nog veel meer van onze prachtige planeet te ontdekken.</p>
 
-                De opleiding heeft me de kans gegeven om verschillende programmeertalen te verkennen en concepten zoals algoritmen en datastructuren te begrijpen. Het is verbazingwekkend hoe het schrijven van eenvoudige regels code kan leiden tot complexe en functionele software. Ik heb geleerd om problemen op te lossen door middel van logica en creatief denken, en ik merk dat deze vaardigheden niet alleen nuttig zijn binnen het programmeren, maar ook in het dagelijks leven.
-                
-                Wat deze ervaring nog specialer maakt, is de gemeenschap van medestudenten en docenten die samenwerken en elkaar ondersteunen. Het delen van kennis en het werken aan projecten met mijn medestudenten heeft me niet alleen geholpen bij het begrijpen van programmeerprincipes, maar heeft ook vriendschappen en samenwerkingen bevorderd.</p>
-        </section>
+                    <!-- Slider -->
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a data-fancybox="gallery2" href="Afbeeldingen/japan2.jpg">
+                                    <img src="Afbeeldingen/japan2.jpg" class="d-block w-100" alt="...">
+                                </a>
 
-        <main id="indexMain">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Japan Tokyo</h5>
+                                <p>Foto genomen vanaf de bovenste verdieping van de Tokyo tower.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a data-fancybox="gallery2" href="Afbeeldingen/japan1.jpg">
+                                    <img src="Afbeeldingen/japan1.jpg" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Japan Kyoto</h5>
+                                    <p>Foto genomen in een authentieke tuin in Kyoto</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a data-fancybox="gallery2" href="Afbeeldingen/japan3.jpg">
+                                    <img src="Afbeeldingen/japan3.jpg" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Japan Hiroshima</h5>
+                                    <p>Foto genomen in een tuin in de stad Hiroshima</p>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <a data-fancybox="gallery2" href="Afbeeldingen/slovenie1.jpg">
+                                    <img src="Afbeeldingen/slovenie1.jpg" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                    <h5>Slovenië hike</h5>
+                                    <p>Foto genomen tijdens een prachtige hike in Slovenië</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a data-fancybox="gallery2" href="Afbeeldingen/slovenie2.jpg">
+                                    <img src="Afbeeldingen/slovenie2.jpg" class="d-block w-100" alt="...">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Slovenië Triglav</h5>
+                                    <p>Foto genomen op de top van de hoogste berg van Slovenië genaamd Triglav</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
 
-            <section>
-                <h1 class="aboutTitle">Hobby's en interesses</h1>
-            </section>
 
-            <section class="aboutBox">
-                <img class="aboutImage1" src="/WebsitesProject1/Afbeeldingen/gaming.jpg" alt="gaming">
-                <p class="aboutSubTitle">Gaming</p>
-                <p class="aboutText" style="font-size:medium;">Gamen is mijn grote passie. Het is de manier waarop ik mijn vrije tijd doorbreng en mezelf verlies in virtuele werelden. Ik begon ermee toen ik jong was en sindsdien is het een hobby geworden die me avonturen, uitdagingen en vriendschappen biedt.
+                    <!-- Buttons -->
+                    <div class="d-grid gap-2 mt-4 d-sm-flex justify-content-sm-center">
+                        <button onclick="window.location.href='#div2'" class="btn btn-primary btn-lg px-4 gap-3 button">Boogschieten</button>
+                    </div>
+                </div>
+            </div>
 
-                    Wat ik het leukst vind aan gamen, is het sociale aspect. Het verbindt me met vrienden over de hele wereld, of we nu samen spelen in coöperatieve games of deelnemen aan online toernooien. Het vergroot mijn sociale kring en zorgt voor geweldige interacties.
-                    
-                    Gamen heeft me ook geholpen om vaardigheden te ontwikkelen, zoals probleemoplossing, strategisch denken en teamwork. Het is niet alleen entertainment, maar ook een manier om mezelf te blijven ontwikkelen. Of ik nu alleen speel om te ontspannen of met vrienden voor de lol, gamen is een belangrijk onderdeel van mijn leven en ik kijk altijd uit naar het volgende avontuur.</p>
-            </section>
-            <section class="aboutBox">
-                <img class="aboutImage1 floatR" src="/WebsitesProject1/Afbeeldingen/archery.jpg" alt="archery">
-                <p class="aboutSubTitle">Boogschieten</p>
-                <p class="aboutText" style="font-size: medium;">
-                    Boogschieten is mijn andere grote passie. Het is een sport die me in contact brengt met de natuur en mijn innerlijke focus versterkt. Het gevoel van de boog in mijn hand en de spanning van het richten op het doelwit zijn onbeschrijfelijk.
-                    
-                    Wat ik het meest waardeer aan boogschieten, is de rust en concentratie die het met zich meebrengt. Het vereist precisie, geduld en beheersing, en dat is precies wat me aantrekt. Het is een manier om even te ontsnappen aan de drukte van het dagelijks leven.
-                    
-                </p>
-            </section>
-            <section class="aboutBox">
-                <img class="aboutImage1" src="/WebsitesProject1/Afbeeldingen/metselen.jpg" alt="metselen">
-                <p class="aboutSubTitle">Metselen</p>
-                <p class="aboutText" style="font-size: medium;">Werken in de villabouw was een boeiende fase in mijn leven. Het was een beroep dat me in staat stelde om met mijn handen te werken en echt tastbare resultaten te zien. Het creëren van luxe villa's vanaf de grond was een uitdaging, maar het bracht ook veel voldoening met zich mee.
 
-                    Een van de aspecten van mijn vorige baan waar ik van hield, was de variatie. Elke villa had zijn eigen unieke ontwerp en specificaties, en geen twee dagen waren ooit hetzelfde. Van het leggen van de fundering tot het plaatsen van het dak, ik was betrokken bij elk aspect van de bouw, en het gaf me een diepgaand begrip van het hele proces.
-                
-                    
-                    Hoewel ik nu andere passies volg, blijft mijn tijd in de villabouw een waardevol hoofdstuk in mijn leven, dat me heeft geleerd over teamwork, nauwkeurigheid en het belang van kwaliteit in elk detail. Het heeft mijn waardering voor architectuur en constructie verrijkt en me gevormd tot wie ik vandaag ben.
-                    
-                    
-                    
-                    
-                    </p>
-            </section>
-        </main>
-    </div>  
-</body>
+            <!-- Boogschieten -->
+
+            <div class="px-4 py-5 text-center cvMarg" id="div2">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/archery.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Boogschieten</h1>
+                <div class="col-lg-10 mx-auto">
+
+                  <p class="lead mb-4">Boogschieten is mijn passie en mijn ontsnapping naar een wereld van concentratie en precisie. De kracht van de boog, het suizen van de pijl, en het moment van perfecte trefzekerheid vormen een harmonieus samenspel dat me telkens weer betovert. Of ik nu in de natuur sta of op de schietbaan, boogschieten geeft me rust en uitdaging in één. Het is meer dan een hobby; het is een kunst die ik koester en altijd zal blijven verkennen.</p>
+                  
+                  <img src="Afbeeldingen/archery.jpg" alt="boogschieten">
+
+                  <!-- Buttons -->
+                  <div class="d-grid gap-2 mt-4 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#div3'" class="btn btn-primary btn-lg px-4 gap-3 button">Gamen</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Gamen -->
+            <div class="px-4 py-5 text-center cvMarg" id="div3">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/game-controller.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Gamen</h1>
+                <div class="col-lg-10 mx-auto">
+
+                  <p class="lead mb-4">Gaming is mijn ontsnapping naar andere werelden, mijn avontuurlijke reis zonder mijn stoel te verlaten. Of het nu in de rol van een dappere held is of als een stratagemaster, games bieden me de mogelijkheid om te verkennen, uit te dagen en te ontspannen. Van epische gevechten tot meeslepende verhalen, mijn gaming-hobby is een constante bron van opwinding en plezier. Het is meer dan alleen spelen; het is het creëren van herinneringen en het delen van geweldige ervaringen met gelijkgestemde gamers over de hele wereld.</p>
+
+                  <img class="img-fluid p-5" src="Afbeeldingen/gaming.jpg" alt="">
+            
+
+                  <!-- Buttons -->
+                  <div class="d-grid gap-2 mt-4 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#div4'" class="btn btn-primary btn-lg px-4 gap-3 button">Programmeren</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Graduaat Programmeren -->
+            <div class="px-4 py-5 text-center cvMarg" id="div4">
+                <img class="d-block mx-auto mb-4" src="Afbeeldingen/web-programming.png" alt="" width="100">
+                <h1 class="display-5 fw-bold">Programmeren</h1>
+                <div class="col-lg-10 mx-auto">
+
+                  <p class="lead mb-4">Programmeren is mijn digitale kunstvorm. Met lijnen code schep ik nieuwe werelden, bouw ik innovatieve toepassingen en ontrafel ik complexe problemen. Elk project is als een puzzel die ik met precisie en creativiteit oplos. Het proces van coderen daagt me uit, inspireert me en laat me groeien als een probleemoplosser. Mijn hobby in programmeren is meer dan alleen technologie; het is mijn passie voor het scheppen van mogelijkheden en het vormgeven van de toekomst.</p>
+            
+
+                  <img class="img-fluid p-5" src="Afbeeldingen/programmeren.jpg" alt="">
+
+                  <!-- Buttons -->
+                  <div class="d-grid gap-2 mt-4 d-sm-flex justify-content-sm-center">
+                    <button onclick="window.location.href='#'" class="btn btn-primary btn-lg px-4 gap-3 button">Terug naar boven</button>
+                  </div>
+                </div>
+            </div>
+          <!-- footer -->
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-muted">© 2023 Smans Tim</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/tim-smans-611155294/" target="_blank">  <img src="Afbeeldingen/linkedin_icon.png" alt=""></a></li>
+              <li class="ms-3"><a class="text-muted" href="mailto:tim.smans@outlook.com" target="_blank"><img src="Afbeeldingen/mail_icon.png" alt=""></a></li>
+            </ul>
+          </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="vendor/OwlCarousel2/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    </body>
 </html>
