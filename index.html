@@ -1,51 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Afbeeldingen/favicon.ico">
 
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+    
 <body>
-    <div class="indexContainer">
-        <nav id="indexNav">
-            <img id="imgLaptop" src="/WebsitesProject1/Afbeeldingen/logolaptop.png" alt="logolaptop">
-            <ul id="navMenu">
-            <li class="activeNav">Home</li>
-            <li class="unActiveNav"><a class="hrefStyle" href="about.html">Over mij</a></li>
-            <li class="unActiveNav"><a class="hrefStyle" href="cv.html">Mijn CV</a></li>
-            <li class="unActiveNav"><a class="hrefStyle" href="ervaring.html">Mijn Ervaring</a></li>
-            <li class="unActiveNav"><a class="hrefStyle" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
 
-        <section id="indexSidebar" class="sideBar">
-            <img id="headShot" src="/WebsitesProject1/Afbeeldingen/headshot.png" alt="headshot">
+    <div class="container">
 
-            <p>Hallo,<br>
-               Mijn naam is Tim Smans<br>
-               en ik ben een student Graduaat Programmeren<br>
-               Aan Thomas More te Turnhout.</p>
-               <p> </p>
-               <p>Op deze website vind je al mijn ervaring<br>
-                  En nog veel meer informatie over mij. 
-               </p>
-        </section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img id="imgLaptop" class="p-lg-1" src="Afbeeldingen/logolaptop.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active activeNav pb-4 px-5" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link unActiveNav pb-4 px-5" href="about.html">OVEr MIJ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link unActiveNav pb-4 px-5" href="cv.html">Mijn CV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link unActiveNav pb-4 px-5" href="ervaring.html">mijn ervaring</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link unActiveNav pb-4 px-5" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
 
-        <main id="indexMain">
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid jumboStyle">
+            <div class="container">
+                <h1 class="display-4 text-center"><strong>Tim Smans</strong></h1>
+                <h2 class="text-center">Website Portfolio</h2>
+            </div>
+        </div>
+    </div>
 
-        <section>
-            <h2 class="indexSubTitle">Tim Smans</h2>
-            <h1 class="indexTitle">Portfolio</h1>
-        </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-12">
+                <a href="about.html"><img class="mt-5 indexImg" src="Afbeeldingen/hobbies.png" alt=""></a>
+                
+            </div>
+            <div class="col-xl-8 col-12">
+                <div class="card" style="margin-top: 13%;">
+                    <div class="card-header">
+                      <strong>Mijn Hobby's</strong>
+                    </div>
+                    <div  class="card-body">
+                      <h5 class="card-title">Druk op de foto om mijn hobby's te bekijken.</h5>
+                      <p class="card-text">Hier deel ik mijn diverse interesses, van gamen en boogschieten tot hiken, reizen en programmeren. Ontdek mijn passies en laat je inspireren. Kom regelmatig terug voor updates en nieuwe avonturen!</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
 
-        <img id="imgBigLaptop" src="/WebsitesProject1/Afbeeldingen/laptop_groot.png" alt="Laptop Big">
+        <div class="row">
+            <div class="col-xl-8 col-12">
+                <div class="card" style="margin-top: 13%;">
+                    <div class="card-header">
+                      <strong>Curriculum Vitae</strong>
+                    </div>
+                    <div  class="card-body">
+                      <h5 class="card-title">Druk op de foto om mijn curriculum vitae te bekijken.</h5>
+                      <p class="card-text">Hier vind je mijn volledige curriculum vitae (cv). Mijn cv bevat een overzicht van mijn professionele achtergrond, opleiding, vaardigheden en werkervaring. Als je geïnteresseerd bent in meer te weten te komen over mijn loopbaan en prestaties, dan ben je op de juiste plek.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-4 col-12">
+                <a href="cv.html"><img class="mt-5 indexImg" src="Afbeeldingen/cv.png" alt=""></a>
+            </div>
+        </div>
 
-        </main>
-    </div>  
-</body>
+        <div class="row">
+            <div class="col-xl-4 col-12">
+                <a href="ervaring.html"><img class="mt-5 indexImg" src="Afbeeldingen/expertise.png  " alt=""></a>
+            </div>
+            <div class="col-xl-8 col-12">
+                <div class="card" style="margin-top: 13%;">
+                    <div class="card-header">
+                      <strong>Mijn Ervaring</strong>
+                    </div>
+                    <div  class="card-body">
+                      <h5 class="card-title">Druk op de foto om mijn ervaring pagina te bekijken.</h5>
+                      <p class="card-text">Welkom op mijn ervaringenpagina, waar ik mijn reis in de professionele wereld deel. Mijn carrière is een boeiende reis geweest, gekenmerkt door groei, uitdagingen en ontdekkingen. Hier vind je een overzicht van enkele hoogtepunten uit mijn carrière:</p>
+                    </div>
+                  </div>
+            </div>
+        
+        </div>
+        
+    </div>
+
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid jumboStyle2">
+            <a class="indexHref" href="contact.html">
+                <div class="container-fluid indexHref">
+                    <h1 class="display-4 text-center indexHref"><strong>Nog meer vragen?</strong></h1>
+                    <h2 class="text-center indexHref">Druk hier een aarzel niet me te contacteren.</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="vendor/OwlCarousel2/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          smartspeed: true
+        });
+      });
+
+      let mybutton = document.getElementById("btn-back-to-top");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
 </html>
-
-

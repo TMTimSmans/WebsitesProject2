@@ -40,6 +40,10 @@ body::-webkit-scrollbar{
     float: left;
 }
 
+.cardClass{
+    text-align: center;
+}
+
 
 .contactForm{
     border: 0px;
@@ -59,7 +63,36 @@ body::-webkit-scrollbar{
 
 }
 
+.indexHref{
+    color: white !important;
+    text-decoration: none;
+}
 
+.indexImg{
+    height: 300px;
+}
+
+.indexImg:hover{
+    height: 310px;
+    transition: 0.2s ease-in;    
+
+}
+
+.jumboStyle{
+    margin-top: 50px;
+    background: url(Afbeeldingen/banner_developer-.jpg) fixed;
+    background-size: 100% 100%;
+    height: 200px;
+    color: white;
+}
+.jumboStyle2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: url(Afbeeldingen/banner_developer-.jpg) fixed;
+    background-size: 100% 100%;
+    height: 200px;
+    color: white;
+}
 #btn-back-to-top {
     position: fixed;
     bottom: 30px;
@@ -68,6 +101,8 @@ body::-webkit-scrollbar{
     border-radius: 50%;
     background-color: #548CA8;
     border-color: #548CA8;
+    width: 60px;
+    box-shadow: 2px 5px 5px darkgray;
 }
 #btn-back-to-top:hover{
     background-color: #36718f;
@@ -161,6 +196,8 @@ body{
     background-size: 100% 100%;
 
     color:#1f2833 !important;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
 }
 
 .alignRight{
